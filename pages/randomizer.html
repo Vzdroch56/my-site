@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомайзер 🎲</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/rand.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Главная</a></li>
+                <li><a href="randomizer.html">🎲 Рандомайзер</a></li>
+                <li><a href="calculator.html">🧮 Калькулятор</a></li>
+                <li><a href="notes.html">📝 Заметки</a></li>
+                <li><a href="about.html">👤 Обо мне</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙 Тёмная тема</button>
+    </header>
+    <main>
+        <h1>🎲 Рандомайзер</h1>
+        <div class="randomizer-container">
+            <label for="min">Минимальное число:</label>
+            <input type="number" id="min" placeholder="Введите минимальное число">
+
+            <label for="max">Максимальное число:</label>
+            <input type="number" id="max" placeholder="Введите максимальное число">
+
+            <button onclick="generateRandomNumber()">Сгенерировать число</button>
+
+            <p id="result">Результат: </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Мой сайт</p>
+    </footer>
+</body>
+</html>

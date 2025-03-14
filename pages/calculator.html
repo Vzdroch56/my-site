@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор 🧮</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/calc.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Главная</a></li>
+                <li><a href="randomizer.html">🎲 Рандомайзер</a></li>
+                <li><a href="calculator.html">🧮 Калькулятор</a></li>
+                <li><a href="notes.html">📝 Заметки</a></li>
+                <li><a href="about.html">👤 Обо мне</a></li>
+            </ul>
+        </nav> 
+        <button id="theme-toggle">🌙 Тёмная тема</button>
+    </header>
+    <main>
+        <h1>🧮 Калькулятор</h1>
+        <div class="randomizer-container">
+        <input
+        type="number"
+        class="calcinp"
+        placeholder="Введите 1 число"
+        id="input1"
+        value="10"
+      />
+      <input
+        type="number"
+        class="calcinp"
+        placeholder="Введите 2 число"
+        id="input2"
+        value="5"
+      />
+      <div class="d-flex mb-2">
+        <button class="btnPlus" id="plus">+</button>
+        <button class="btnPlus" id="minus">-</button>
+        <button class="btnPlus" id="umn">*</button>
+        <button class="btnPlus" id="del">:</button>
+      </div>
+      <button class="btnResult" id="submit">
+        Вычислить
+      </button>
+
+      <div class="text-bg-light p-3 text-center">
+        <h4>Результат:</h4>
+        <p id="result" class="mb-0">49</p>
+      </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Мой сайт</p>
+    </footer>
+</body>
+</html>

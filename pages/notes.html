@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки 📝</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/note.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Главная</a></li>
+                <li><a href="randomizer.html">🎲 Рандомайзер</a></li>
+                <li><a href="calculator.html">🧮 Калькулятор</a></li>
+                <li><a href="notes.html">📝 Заметки</a></li>
+                <li><a href="about.html">👤 Обо мне</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌙 Тёмная тема</button>
+    </header>
+    <main>
+        <h1>📝 Заметки</h1>
+        <div class="randomizer-container">
+        <input
+          type="text"
+          class="noteInp"
+          placeholder="Введите название"
+          id="title"
+        />
+        <button class="btnCreate" id="create">
+          Добавить
+        </button>
+  
+        <ul class="list-group list-group-flush" id="list">
+          <!-- <li
+            class="list-group-item d-flex justify-content-between align-items-center">
+            <span>Название</span>
+            <span>
+              <span class="btn btn-small btn-success">&check;</span>
+              <span class="btn btn-small btn-danger">&times;</span>
+            </span>
+          </li> -->
+        </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Мой сайт</p>
+    </footer>
+</body>
+</html>
